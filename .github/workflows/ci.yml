@@ -9,6 +9,7 @@ on:
   pull_request:
     branches:
       - main          # también en PRs hacia main
+  workflow_dispatch:   # permite ejecutar el workflow manualmente desde GitHub
 
 # ── JOBS: los trabajos a ejecutar ─────────────────────────────
 jobs:
@@ -44,7 +45,7 @@ jobs:
       # PASO 5: Mensaje de éxito
       - name: ✅ Pipeline completado
         run: echo "🎉 CI Pipeline ejecutado exitosamente"
-        
+
   lint:                          # nombre del job
     name: Verificar Longitud de Líneas
     runs-on: ubuntu-latest      # runner: Ubuntu más reciente
