@@ -5,9 +5,10 @@ echo "=========================================="
 echo "  🚀 Ejecutando pruebas del proyecto..."
 echo "=========================================="
 
+echo "Entorno: $APP_ENV"
+
 # Verificar versión de bash
 echo "✅ Bash version: $BASH_VERSION"
-echo "Entorno: $APP_ENV"
 
 # Verificar que un archivo existe
 if [ -f "README.md" ]; then
